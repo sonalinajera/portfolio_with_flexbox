@@ -1,0 +1,169 @@
+/* general styles*/
+/* need to insert google font import */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap');
+
+/* make all font google font */
+
+* {
+    font-family: "Noto Serif JP", serif;
+}
+
+img {
+    width: 100%;
+}
+
+/* header */
+header {
+    background: url(pink-header-background.jpeg);
+    background-position: center;
+    margin-bottom: 0px;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+    color: rgb(46, 38, 38);
+}
+
+header nav {
+    display: flex; 
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+}
+
+header nav ul li a {
+    color: linen;
+    text-decoration: none;
+    margin: 0 20px 0 0;
+    padding: 2px 2px
+}
+
+header nav ul li:last-child a {
+    margin-right: 0;
+}
+/* main */ 
+main {
+    padding-bottom: 20px;
+}
+
+.headshot img {
+    border-radius: 50%;
+}
+
+#about {
+    background-color: #ffd4b680;
+    padding: 20px 0 30px 0;
+    margin: 20px 0;
+}
+
+#contact img {
+    width: 100%;
+}
+
+/* ---  Contact Form Design --- */
+
+form {
+    padding-right: 6px;
+    /* Fixed small sizing issue on the right */
+  }
+  
+  form input, 
+  form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  form textarea {
+    height: 160px;
+  }
+
+/* google map */
+iframe {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid darkgray;
+  }
+
+
+
+/* footer */
+footer {
+    background-color: lightpink;
+    padding: 20px 0;
+}
+footer p {
+    text-align: center;
+    color: linen;
+}
+
+/* Group & items (mobile)  */
+
+.group {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    flex: 1;
+    margin: 10px;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+/* Group & items (Desktop)  */
+
+@media all and (min-width: 560px) {
+/* general layout */
+.item img {
+    padding: 20px 0;
+}
+
+.headshot img {
+    border-radius: 10%;
+}
+
+#contact img {
+    width: 35%;
+}
+.group {
+    display: flex;
+    flex-direction: row;
+}
+
+.item {
+    margin: 20px;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 30px;
+}
+
+header h1 {
+    margin: 14px 0;
+    padding-top: 0;
+    font-size: 40px;
+}
+
+header nav {
+    margin-top: 8px; 
+    font-size: 20px;
+}
+
+header nav ul li a:hover {
+    color: rgb(130, 168, 240);
+    background-color: rgba(252, 200, 180, 0.3);
+}
+
+}
+
